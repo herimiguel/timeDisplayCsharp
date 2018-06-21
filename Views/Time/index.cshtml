@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="~/css/styles.css">
+        <title>Hello!</title>
+    </head>
+    <body>
+        <h1>  Current Date and Time:  </h1>
+        @{
+            DateTime now = DateTime.Now;
+            string date = "D";
+            string time = "t";
+            <h2>@now.ToString(date)</h2>
+            <h2>@now.ToString(time)</h2>
+        }
+    </body>
+</html>
